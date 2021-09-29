@@ -87,7 +87,7 @@ body{
     left: 260px;
     top: 5px;
     height: 46px;
-    width: 162px;
+    width: 22%;
     border: none;
     border-radius: 28px;
     background: #54E6AF;
@@ -111,7 +111,7 @@ body{
 }
 .platforms{
     display: flex;
-    margin-top:60px;
+    margin-top:30px;
 }
 .platforms img{
     padding-right: 40px;
@@ -122,7 +122,7 @@ body{
     right: 0%;
 }
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:1025px){
     body{
         height: 100vh;
     }
@@ -134,12 +134,10 @@ body{
     .text-content{
     position: absolute;
     z-index: 1;
-    height: 520px;
-    width: 648px;
-    bottom: -6%;
+    height: 80%;
+    width: 90%;
     background: #121725;
     left: -15%;
-    top: 9%;
     }
     .side-img{
         position: absolute;
@@ -204,7 +202,8 @@ body{
     }
     .platforms img{
     
-        height: 17px;
+        height: 22px;
+        padding-right: 12px;
     }
     .logo{
         left: 32%;
@@ -221,30 +220,24 @@ body{
       
         position: static;
         
-        width: 386px;
+        width:117%;
     }
 
 }
 
-@media only screen and (max-width:420px) { 
+@media only screen and (max-width:520px) { 
     .container{
         overflow: scroll;
     }
     .text-content{
         background: transparent;
-        width: 209px;
-        height: 193px;
-        left: 18%;
-        top: 26%;
+        width: 80%;
         display: flex;
         flex-direction: column;
-    }
-    .card{
-        height: 59%;
-        width: 38%;
+        align-items: center;
     }
     .btn{
-        width:110%;
+        width:100%;
     }
     .email{
         width: 79%;
