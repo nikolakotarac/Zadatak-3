@@ -1,188 +1,188 @@
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Chivo', sans-serif;
-   
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo", sans-serif;
 }
-body{
-    background-color: #121725;
+body {
+  background-color: #121725;
+  height: 100vh;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card {
+  height: 75%;
+  width: 85%;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 4%;
+  top: -6%;
+}
+
+.side-img {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  background: url("./assets/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 69%;
+}
+.text-content {
+  position: absolute;
+  z-index: 1;
+  height: 509px;
+  width: 723px;
+  bottom: 0;
+  background: #121725;
+}
+.card-headline {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #54e6af;
+  margin-top: 40px;
+}
+.card-headline span {
+  color: #ffffff;
+}
+
+.card-decription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c2cbe5;
+  margin: 50px auto;
+}
+#form {
+  position: relative;
+}
+.email {
+  width: 364px;
+  border-radius: 28px;
+  padding: 14px 32px 14px 32px;
+  outline: none;
+  border: none;
+  background: #2c344b;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.btn {
+  position: absolute;
+  left: 260px;
+  top: 5px;
+  height: 46px;
+  width: 22%;
+  border: none;
+  border-radius: 28px;
+  background: #54e6af;
+  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #121725;
+}
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.error {
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
+  padding-top: 10px;
+}
+.platforms {
+  display: flex;
+  margin-top: 40px;
+}
+.platforms img {
+  padding-right: 40px;
+}
+.dots {
+  position: absolute;
+  bottom: -4%;
+  right: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
     height: 100vh;
-}
-.container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.card{
-    height: 75%;
-    width: 85%;
-    position: relative;
-}
-.logo{
+  }
+  .logo {
     position: absolute;
-    left: 4%;
+    left: -17%;
     top: -6%;
-}
-
-.side-img{
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    background: url('./assets/desktop/image-host.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 69%;
-}
-.text-content{
-    position: absolute;
-    z-index: 1;
-    height: 509px;
-    width: 723px;
-    bottom: 0;
-    background: #121725;
-}
-.card-headline{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
-    line-height: 62px;
-    text-transform: uppercase;
-    color: #54E6AF;
-    margin-top: 40px;
-}
-.card-headline span{
-    color: #FFFFFF;
-}
-
-.card-decription{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #C2CBE5;
-    margin: 50px auto;
-}
-#form{
-    position: relative;
-    margin: 35px auto;
-}
-.email{
-    width: 364px;
-    border-radius: 28px;
-    padding: 14px 32px 14px 32px;
-    outline: none;
-    border: none;
-    background: #2C344B;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 28px;
-    color: #FFFFFF;
-}
-.btn{
-    position: absolute;
-    left: 260px;
-    top: 5px;
-    height: 46px;
-    width: 22%;
-    border: none;
-    border-radius: 28px;
-    background: #54E6AF;
-    box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 28px;
-    color: #121725;
-}
-.btn:hover{
-    opacity: 0.8;
-    cursor:pointer;
-}
-.error{
-    display: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: #FB3E3E;
-}
-.platforms{
-    display: flex;
-    margin-top:30px;
-}
-.platforms img{
-    padding-right: 40px;
-}
-.dots{
-    position: absolute;
-    bottom: -4%;
-    right: 0%;
-}
-
-@media only screen and (max-width:1025px){
-    body{
-        height: 100vh;
-    }
-    .logo{
-        position: absolute;
-        left: -17%;
-        top: -6%;
-    }
-    .text-content{
+  }
+  .text-content {
     position: absolute;
     z-index: 1;
     height: 80%;
     width: 90%;
     background: #121725;
     left: -15%;
-    }
-    .side-img{
-        position: absolute;
-        right: 0%;
-        z-index: -1;
-        background: url('./assets/desktop/image-host.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 86%;
-        width: 95%;
-        top: -17%;
-    }
-    .dots{
+  }
+  .side-img {
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+    background: url("./assets/desktop/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 86%;
+    width: 95%;
+    top: -17%;
+  }
+  .dots {
     position: absolute;
     bottom: -15%;
     right: 79%;
-    }  
+  }
 }
-@media only screen and (max-width:670px){
-    .body {
-       height: 100vh;
-    }
-    .container{
-        display: block;
-        height: 100%;
-        background: linear-gradient(rgba(18,23,37,0.9), rgba(18,23,37,0.9)), url("/assets/mobile/image-host.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-    .dots{
-        display: none;
-    }
-    .side-img{
-        display: none;
-    }
-    .text-content{
-        background: transparent;
-        width: 327px;
-        height: 192px;
-        left: 18%;
-        top: 27%;
-    }
-    .card-headline{
-        font-style: normal;
+@media only screen and (max-width: 670px) {
+  .body {
+    height: 100vh;
+  }
+  .container {
+    display: block;
+    height: 100%;
+    background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
+      url("/assets/mobile/image-host.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .dots {
+    display: none;
+  }
+  .side-img {
+    display: none;
+  }
+  .text-content {
+    background: transparent;
+    width: 327px;
+    height: 192px;
+    left: 18%;
+    top: 27%;
+  }
+  .card-headline {
+    font-style: normal;
     font-weight: normal;
     font-size: 26px;
     line-height: 38px;
@@ -190,67 +190,63 @@ body{
 
     text-align: center;
     text-transform: uppercase;
-    }
-    .card-decription{
-        font-size: 15px;
+  }
+  .card-decription {
+    font-size: 15px;
     line-height: 25px;
     /* or 167% */
 
     text-align: center;
 
-    color: #C2CBE5;
-    }
-    .platforms img{
-    
-        height: 22px;
-        padding-right: 12px;
-    }
-    .logo{
-        left: 32%;
-         top: 3%;
-    }
-    .email{
-        margin-bottom: 15px;
-        
-        width: 100%;
-      
-    }
+    color: #c2cbe5;
+  }
+  .platforms img {
+    height: 22px;
+    padding-right: 12px;
+  }
+  .logo {
+    left: 32%;
+    top: 3%;
+  }
+  .email {
+    margin-bottom: 15px;
 
-    .btn {
-      
-        position: static;
-        
-        width:117%;
-    }
+    width: 100%;
+  }
 
+  .btn {
+    position: static;
+
+    width: 117%;
+  }
 }
 
-@media only screen and (max-width:520px) { 
-    .container{
-        overflow: scroll;
-    }
-    .text-content{
-        background: transparent;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn{
-        width:100%;
-    }
-    .email{
-        width: 79%;
-    }
-    .platforms img{
-        padding-right: 10px;
-        height: 13px;
-    }
-    #form{
-        order:2;
-        margin:25px auto;
-    }
-    .error{
-        order:3;
-    }
+@media only screen and (max-width: 520px) {
+  .container {
+    overflow: scroll;
+  }
+  .text-content {
+    background: transparent;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .email {
+    width: 79%;
+  }
+  .platforms img {
+    padding-right: 10px;
+    height: 13px;
+  }
+  #form {
+    order: 2;
+    margin: 25px auto;
+  }
+  .error {
+    order: 3;
+  }
 }
